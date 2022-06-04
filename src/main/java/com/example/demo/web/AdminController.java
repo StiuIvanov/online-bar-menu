@@ -45,7 +45,7 @@ public class AdminController {
                               Model model) {
         ProductEntity currentProduct = productService.findById(id);
         model.addAttribute("currentProduct", currentProduct);
-        return "/admin-panel/edit-product";
+        return "edit-product";
     }
 
     @GetMapping("/add-event")
@@ -55,7 +55,7 @@ public class AdminController {
 
     @GetMapping("/add-special")
     public String addSpecial() {
-        return "/admin-panel/add-special";
+        return "add-special";
     }
 
     @PostMapping("/add-special")
@@ -125,7 +125,7 @@ public class AdminController {
         modelAndView.addObject("nuts", productService.getAllByType(TypeEnum.Nuts));
         modelAndView.addObject("menu", productService.getAllByType(TypeEnum.Menu));
 
-        modelAndView.setViewName("admin-panel/admin-full-menu");
+        modelAndView.setViewName("admin-full-menu");
         return modelAndView;
     }
 
