@@ -15,7 +15,7 @@
                 <h5 class="card-title text-center" th:text="${special.getName()}">Specialty name</h5>
                 <form sec:authorize="isAuthenticated()" class="text-center " th:action="@{/admin/delete-specialty}"
                       th:method="post">
-                    <button type="submit" class="btn btn-danger  mb-3 mt-3">Delete specialty</button>
+                    <button type="submit" class="btn btn-danger  mb-3 mt-3">Delete speciality</button>
                 </form>
                 <div class="card" style="width: 100%;">
                     <img class="card-img-top myImageBorder" th:src="${special.getPicture().getUrl()}"
