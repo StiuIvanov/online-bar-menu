@@ -13,7 +13,7 @@ public class SpecialProductEntity extends BaseEntity {
     private String name;
     private Double price;
     private String description;
-//    private PictureEntity picture;
+    private PictureEntity picture;
 
 
     public SpecialProductEntity() {
@@ -49,13 +49,13 @@ public class SpecialProductEntity extends BaseEntity {
         return this;
     }
 
-//    @OneToOne
-//    public PictureEntity getPicture() {
-//        return picture;
-//    }
-//
-//    public SpecialProductEntity setPicture(PictureEntity picture) {
-//        this.picture = picture;
-//        return this;
-//    }
+    @OneToOne
+    public PictureEntity getPicture() {
+        return picture;
+    }
+
+    public SpecialProductEntity setPicture(PictureEntity picture) {
+        this.picture = picture;
+        return this;
+    }
 }
