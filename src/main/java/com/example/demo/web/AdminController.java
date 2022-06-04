@@ -50,7 +50,7 @@ public class AdminController {
 
     @GetMapping("/add-event")
     public String addEvent() {
-        return "/admin-panel/add-event";
+        return "add-event";
     }
 
     @GetMapping("/add-special")
