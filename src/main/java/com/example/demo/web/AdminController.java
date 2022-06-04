@@ -43,6 +43,7 @@ public class AdminController {
     @GetMapping("/edit/{id}")
     public String editProduct(@PathVariable Long id,
                               Model model) {
+
         ProductEntity currentProduct = productService.findById(id);
         model.addAttribute("currentProduct", currentProduct);
         return "edit-product";
