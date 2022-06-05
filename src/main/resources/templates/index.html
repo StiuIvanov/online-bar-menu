@@ -29,7 +29,7 @@
             </th:block>
 
             <th:block id="event" th:if="${event != null }">
-                <h3 class="text-center">Today's Event</h3>
+                <h3 class="text-center myLinkList">Today's Event</h3>
                 <form sec:authorize="isAuthenticated()" class="text-center " th:action="@{/admin/delete-event}"
                       th:method="post">
                     <button type="submit" class="btn btn-danger  mb-3 mt-3">Delete event</button>
