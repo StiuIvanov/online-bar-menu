@@ -45,10 +45,11 @@ public class SpecialProductServiceImpl implements SpecialProductService {
             e.printStackTrace();
         }
 
-        SpecialProductEntity specialProductEntity = modelMapper.map(bindingModel, SpecialProductEntity.class);
-
         pictureService.saveToDB(picture);
-//        specialProductEntity.setPicture(picture);
+
+        SpecialProductEntity specialProductEntity = modelMapper.map(bindingModel, SpecialProductEntity.class);
+        specialProductEntity.setPicture(picture);
+
         specialProductRepository.save(specialProductEntity);
     }
 
