@@ -174,7 +174,7 @@ public class ProductServiceImpl implements ProductService {
     public void initBeer() {
         ProductEntity smallDraft = new ProductEntity().setName("Малка Наливна Бира / Small Draft Beer 0.30л.").setPrice(4.00).setType(TypeEnum.Beer);
         ProductEntity largeDraft = new ProductEntity().setName("Голяма Наливна Бира / Large Draft Beer 0.50л.").setPrice(6.00).setType(TypeEnum.Beer);
-        ProductEntity birichka = new ProductEntity().setName("Биричка 10' / Birichka Beer 10' 0.33л.").setPrice(3.50).setType(TypeEnum.Beer);
+        ProductEntity birichka = new ProductEntity().setName("Биричка 10' / Birichka Beer 10' 0.33л.").setPrice(4.0).setType(TypeEnum.Beer);
         ProductEntity vitoshaTulip = new ProductEntity().setName("Витошко Лале Светло / Vitosha Tulip 0.50л.").setPrice(5.50).setType(TypeEnum.Beer);
         ProductEntity vitoshaTulipBlonde = new ProductEntity().setName("Витошко Лале БЛОНД 10' / Vitosha Tulip BLOND 10' 0.50л.").setPrice(5.50).setType(TypeEnum.Beer);
         ProductEntity vitoshaTulipWeiss = new ProductEntity().setName("Витошко Лале ВАЙС / Vitosha Tulip Weiss 0.50л.").setPrice(7.00).setType(TypeEnum.Beer);
