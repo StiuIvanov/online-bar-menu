@@ -34,7 +34,7 @@ public class CronScheduler {
 
         HttpURLConnection connection = null;
 
-        URL url = new URL("https://schroedinger.herokuapp.com/");
+        URL url = new URL("https://schroedinger-menu-bar-online.herokuapp.com//");
         connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("HEAD");
         int responseCode = connection.getResponseCode();
