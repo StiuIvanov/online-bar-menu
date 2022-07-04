@@ -38,7 +38,6 @@ public class CronScheduler {
         connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("HEAD");
         int responseCode = connection.getResponseCode();
-        System.out.println();
         LOGGER.info("PING https://schroedinger.herokuapp.com/ code " + responseCode + "at:{} ", LocalDateTime.now());
     }
 
