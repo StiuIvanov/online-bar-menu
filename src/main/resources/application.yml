@@ -11,7 +11,7 @@ spring:
     username: ${JDBC_DATABASE_USERNAME:}
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     open-in-view: false
     properties:
       hibernate:
@@ -36,5 +36,6 @@ cloudinary:
 
 schedulers:
   cron: "0 0 09 * * ?"
+  cron2: "* */20 * ? * *"
 
 server.port: ${PORT:8080}
